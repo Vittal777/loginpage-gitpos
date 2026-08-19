@@ -14,7 +14,7 @@ spec:
   spec:
    containers:
    - name: spring-login
-     image: vittalsai278964/loginpage-springboot:22
+     image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
      ports:
      - containerPort: 1725
      envFrom:
